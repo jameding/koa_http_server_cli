@@ -1,0 +1,45 @@
+{
+  "name": "koa-http-server-model",
+  "version": "1.0.0",
+  "description": "HTTP模板",
+  "main": "server.js",
+  "dependencies": {
+    "cos-nodejs-sdk-v5": "^2.5.20",
+    "handlebars": "^4.5.3",
+    "js-yaml": "^3.13.1",
+    "koa": "^2.11.0",
+    "koa-body": "^4.1.1",
+    "koa-ip-filter": "^3.0.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa2-cors": "^2.0.6",
+    "log4js": "^6.1.0",
+    "mocha": "^7.0.0",
+    "moment": "^2.24.0",
+    "node-fetch": "^2.6.0",
+    "swagger-extra": "^1.0.6",
+    "swagger-ui-dist": "3.12.0",
+    "underscore": "^1.9.2",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-latest-node": "^0.4.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ysdyyy/util-self.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ysdyyy/util-self/issues"
+  },
+  "homepage": "https://github.com/ysdyyy/util-self#readme"
+}

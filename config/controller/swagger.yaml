@@ -1,0 +1,61 @@
+swagger: "2.0"
+info:
+  description: ""
+  version: "1.0.0"
+  title: "swagger"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "apiteam@swagger.io"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+
+#### ------- route config region --------
+host: "localhost:5558"
+basePath: "/"
+#### endregion
+
+schemes:
+- "http"
+
+
+#### ------- tags region ----------------
+tags:
+
+- name: 'tagTest'
+  description: "TagDescription"
+
+paths:
+  /common/login:
+    post:
+      tags:
+        - tagTest
+      summary: summary test login
+      description: description test login
+      parameters:
+        - name: p1
+          type: string
+          in: formData
+          required: true
+        - name: p2
+          type: number
+          in: formData
+          required: true
+      responses:
+        200:
+          description: successful
+          schema:
+            type: object
+
+#### endregion
+
+definitions:
+  emptyObject:
+    type: 'object'
+
+security:
+  - bearerAuth: []         # use the same name as above
+
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"
